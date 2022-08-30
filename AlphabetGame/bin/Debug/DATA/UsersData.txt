@@ -1,0 +1,5 @@
+aa@aa.co;aa;3;26;0;0
+yoav@gmail.com;Yoav;0;0;0;0
+elad@walla.com;elad;0;0;0;0
+al@aa.co;al;0;0;0;0
+bb@ca.co;ben;0;0;0;0

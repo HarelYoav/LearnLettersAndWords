@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB56BAB3-C7DC-4546-8345-9CE044128651}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AlphabetGame</RootNamespace>
+    <AssemblyName>AlphabetGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddWordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWordForm.Designer.cs">
+      <DependentUpon>AddWordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildWordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildWordForm.Designer.cs">
+      <DependentUpon>BuildWordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoosePicureGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoosePicureGameForm.Designer.cs">
+      <DependentUpon>ChoosePicureGameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="GamesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamesForm.Designer.cs">
+      <DependentUpon>GamesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WordMemoryGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WordMemoryGameForm.Designer.cs">
+      <DependentUpon>WordMemoryGameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhatsInThePictureGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhatsInThePictureGameForm.Designer.cs">
+      <DependentUpon>WhatsInThePictureGameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearnWordsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearnWordsForm.Designer.cs">
+      <DependentUpon>LearnWordsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LetterWwords.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Letter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="Words.cs" />
+    <Compile Include="WordStruct.cs" />
+    <EmbeddedResource Include="AddWordForm.resx">
+      <DependentUpon>AddWordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildWordForm.resx">
+      <DependentUpon>BuildWordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoosePicureGameForm.resx">
+      <DependentUpon>ChoosePicureGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamesForm.resx">
+      <DependentUpon>GamesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhatsInThePictureGameForm.resx">
+      <DependentUpon>WhatsInThePictureGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearnWordsForm.resx">
+      <DependentUpon>LearnWordsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WordMemoryGameForm.resx">
+      <DependentUpon>WordMemoryGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
