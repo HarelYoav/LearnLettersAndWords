@@ -1,4 +1,4 @@
-# LearnLettersAndWords
+# Learn Letters And Words
 
 This was my first OOP project
 The project was developed in C# using visual studio and Windows Forms
